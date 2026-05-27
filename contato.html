@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+
+    <form action="#" method="POST" class="form-contato">
+        
+        <div class="grupo-campo">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required> </div>
+
+        <div class="grupo-campo">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="grupo-campo">
+            <label for="assunto">Assunto:</label>
+            <select id="assunto" name="assunto" required>
+                <option value="">Selecione um assunto...</option>
+                <option value="suporte">Suporte Técnico</option>
+                <option value="comercial">Comercial / Vendas</option>
+                <option value="sugestao">Sugestões</option>
+            </select>
+        </div>
+
+        <div class="grupo-campo">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+
+</body>
+</html>
